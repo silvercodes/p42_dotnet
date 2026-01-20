@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="01_var_types/01_var_types.csproj" />
+  <Project Path="02_operators/02_operators.csproj" Id="661cc90d-b851-49c3-9716-bbec442a4db8" />
 </Solution>
