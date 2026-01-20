@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="01_var_types/01_var_types.csproj" />
   <Project Path="02_operators/02_operators.csproj" Id="661cc90d-b851-49c3-9716-bbec442a4db8" />
+  <Project Path="03_arrays/03_arrays.csproj" Id="1e1ff89c-b9b4-4f1f-9d99-c54482fb6d8c" />
 </Solution>
