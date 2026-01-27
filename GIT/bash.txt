@@ -1,0 +1,8 @@
+pwd					// print work directory
+clear
+
+ls					// show current directory
+ls -la
+cd					// change directory
+mkdir vasia			// create directory vasia
+rm -r test			// remove test directory

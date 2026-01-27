@@ -1,0 +1,42 @@
+
+=== Первоначальная настройка (один раз для ПК с установленным GIT)
+git --version
+
+git config --global user.name "Vasia Pupkin"
+git config --global user.email vasia@mail.com
+git config --list
+
+
+=== Работа с локальным репозиторием
+git init								// инициализировать репозиторий в текущей директории
+
+git status								// статус репозитория
+git add t.cpp							// добавить 1.cpp в stage
+git add .								// добавить все untracked / modified файлы в stage
+git commit -m "your coment"				// создать коммит
+git log 								// история коммитов
+git log --pretty=oneline
+git --amend -m "The new commit message."	// переименовать последний коммит
+
+git branch			// список веток в репозитории
+git branch dev		// создать ветку dev
+git checkout dev		// Переключиться на ветку dev
+git branch -D dev		// Удалить ветку dev
+
+// === слияние веток
+1. Перейти на ветку - приемник (в которую собираетесь сливать)
+	git checkout master
+2. git merge dev	// слить все изменения из ветки dev в текущую
+
+
+// === исправление конфликтов
+1. git merge dev   ==> CONFLICT in file.cpp
+2. Открыть файл и исправить конфликтные строки
+3. git add .
+4. git commit
+
+// === игнорирование файлов / папок
+1. Создать .gitignore в корне
+2. Написать маски для игнорирования
+
+

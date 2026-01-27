@@ -1,0 +1,34 @@
+// === Настройка подключения между локальным ПК и сервером GitHub 
+//			(один раз для связка ПК - аккаунт)
+
+1. Создать пару ключей
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+2. Скопировать содержимое публичного ключа
+3. Создать запись с публичным ключом на гитхаб
+Menu -> Settings -> SSH and GPG keys -> New SSH key(кнопка) ----> Добавить ключ
+
+
+// === Создать пустой репозиторий на ГитХаб
+
+// === Связать репозиторий на гитхабе и локальный репозиторий
+git remote -v				// просмотр удаленных ссылок
+git remote add origin git@github.com:silvercodes/p23_test.git   // добавить ссылку с именем origin на удаленный репозиторий (подобную команду можно взять со страницы своего пустого репозитория)
+
+// === Пуш репозитория
+git checkout master
+git push origin master			// отправить ТЕКУЩУЮ ветку master в origin/master
+
+
+// === Клонирование репозитория на локальную машину (только master)
+git clone git@github.com:silvercodes/p23_test.git
+
+// === Подтягивание других веток в локальный репозиторий
+git fetch origin feature		// запрос ветки
+git checkout feature			// переключение на ветку (проявление)
+
+
+
+
