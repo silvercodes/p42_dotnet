@@ -1,3 +1,5 @@
 <Solution>
   <Project Path="01_class/01_class.csproj" />
+  <Project Path="02_structs/02_structs.csproj" Id="9a467cab-43dd-488c-b087-974112dfa4b8" />
+  <Project Path="03_types/03_types.csproj" Id="63a0f352-30ff-476d-a35c-6589df5ad37b" />
 </Solution>
