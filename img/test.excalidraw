@@ -1,0 +1,154 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "S6KaLobeqDuQQjRSpz4e_",
+      "type": "rectangle",
+      "x": 287.6000061035156,
+      "y": 192.8000030517578,
+      "width": 297.1999816894531,
+      "height": 200.8000030517578,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a0",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1902021258,
+      "version": 13,
+      "versionNonce": 1101643722,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "zK8ztNLjs1T2uwW06KTF3",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1770916963368,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "zK8ztNLjs1T2uwW06KTF3",
+      "type": "arrow",
+      "x": 587.6000366210938,
+      "y": 304.8000183105469,
+      "width": 211.5999755859375,
+      "height": 81.60002136230469,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a1",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 367503818,
+      "version": 14,
+      "versionNonce": 1292398858,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1770916963368,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          211.5999755859375,
+          -81.60002136230469
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "S6KaLobeqDuQQjRSpz4e_",
+        "focus": 0.4437707957207398,
+        "gap": 2.800048828125
+      },
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "d_7JI6S9h3k-3gJi4SgGj",
+      "type": "arrow",
+      "x": 797.2000122070312,
+      "y": 220,
+      "width": 166,
+      "height": 146.39999389648438,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a2",
+      "roundness": null,
+      "seed": 103337750,
+      "version": 14,
+      "versionNonce": 1104331734,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1770916964989,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          83,
+          0
+        ],
+        [
+          83,
+          146.39999389648438
+        ],
+        [
+          166,
+          146.39999389648438
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": null,
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": true,
+      "fixedSegments": null,
+      "startIsSpecial": null,
+      "endIsSpecial": null
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}

@@ -10,6 +10,9 @@
   <Project Path="04_namespaces/04_namespaces.csproj" Id="c88417ed-0084-46c5-8010-c85a5c60a245" />
   <Project Path="05_namespaces_2/05_namespaces_2.csproj" Id="ecfe990f-fb6a-4b77-b876-0fdad178df85" />
   <Project Path="06_namespaces_3/06_namespaces_3.csproj" Id="8359ae38-efc3-418f-9a38-0d7a8966b9d5" />
+  <Project Path="07_nuget/07_nuget.csproj" Id="f0b910c7-5872-4659-b0cc-fe8572030ac1" />
+  <Project Path="08_modificators/08_modificators.csproj" Id="6724d45a-3cf5-449a-8c22-cb1fdeb3b7a8" />
+  <Project Path="09_properties/09_properties.csproj" Id="012dda01-388f-4e98-9e33-df69ae3c4e06" />
   <Project Path="cpp/cpp.vcxproj" Id="dc800ac9-8278-4699-8538-423e077b87f5" />
   <Project Path="MathEngine/MathEngine.csproj" Id="52169236-fe9e-4bef-9d2c-cd89476c1d11" />
 </Solution>
