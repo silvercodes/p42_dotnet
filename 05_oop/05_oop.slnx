@@ -14,6 +14,7 @@
   <Project Path="08_modificators/08_modificators.csproj" Id="6724d45a-3cf5-449a-8c22-cb1fdeb3b7a8" />
   <Project Path="09_properties/09_properties.csproj" Id="012dda01-388f-4e98-9e33-df69ae3c4e06" />
   <Project Path="10_overloading_static_const/10_overloading_static_const.csproj" Id="5d8e412a-45e4-4ca8-a1c2-0c680c2c86d5" />
+  <Project Path="11_null/11_null.csproj" Id="ee87ac39-bfb8-4bc6-b4b7-4d648a6a5829" />
   <Project Path="cpp/cpp.vcxproj" Id="dc800ac9-8278-4699-8538-423e077b87f5" />
   <Project Path="MathEngine/MathEngine.csproj" Id="52169236-fe9e-4bef-9d2c-cd89476c1d11" />
 </Solution>
