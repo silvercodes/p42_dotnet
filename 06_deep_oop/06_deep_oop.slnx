@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="01_inheritance/01_inheritance.csproj" />
   <Project Path="02_abstract/02_abstract.csproj" Id="d505fa26-a15a-47db-ad5f-3bbfb015222b" />
+  <Project Path="03_dp_strategy/03_dp_strategy.csproj" Id="513c13bb-ebcd-47e6-accb-b27971dfac42" />
 </Solution>
