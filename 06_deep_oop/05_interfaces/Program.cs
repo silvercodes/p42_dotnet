@@ -126,7 +126,6 @@
 #endregion
 
 
-
 #region Multiple implementation
 
 
@@ -173,7 +172,6 @@
 //}
 
 #endregion
-
 
 
 #region Explicit realization (явная реализация)
@@ -262,8 +260,6 @@
 #endregion
 
 
-
-
 #region Interface with inheritance
 
 //interface IRenderable
@@ -292,29 +288,299 @@
 
 
 
-interface IRenderable
-{
-    public void Render();
-}
+//interface IRenderable
+//{
+//    public void Render();
+//}
 
-class Shape: IRenderable
-{
-    public void Render() => Console.WriteLine("Shape.Render()");
-}
+//class Shape: IRenderable
+//{
+//    public void Render() => Console.WriteLine("Shape.Render()");
+//}
 
-class Rect : Shape, IRenderable
-{
-    public new void Render() => Console.WriteLine("Rect.Render()");
-}
+//class Rect : Shape, IRenderable
+//{
+//    public new void Render() => Console.WriteLine("Rect.Render()");
+//}
 
 
 
-//
-//
+//Rect a = new Rect();
+//a.Render();                     // 2
+
+//Shape b = new Rect();
+//b.Render();                     // 1
+
+//IRenderable c = new Rect();     // 3
+//c.Render();
+
+//IRenderable d = new Shape();    // 1
+//d.Render();
+
+
+
+//interface IRenderable
+//{
+//    public void Render();
+//}
+
+//class Shape : IRenderable
+//{
+//    public virtual void Render() => Console.WriteLine("1. Shape.Render()");
+//}
+
+//class Rect : Shape, IRenderable
+//{
+//    public new void Render() => Console.WriteLine("2. new Rect.Render()");
+//    void IRenderable.Render() => Console.WriteLine("3. Explicit IRenderable.Render() from Rect");
+//}
+
+#endregion
+
+
+#region Interfaces inheritance
+
+
+//IWritable a = new FileManager();
+//a.Write();                              // 6
+
+//IFileSaver b = new FileManager();
+//b.Write();                              // 7
+//b.Save();                               // 8
+
+//IWritable c = new FileManager();
+//// c.Save();        // ERROR
+//if (c is IFileSaver ifs)
+//    ifs.Save();                         // 8
+
+//if (c is FileManager fm)
+//    fm.Save();                          // 4
+
+
+
+//interface IWritable
+//{
+//    // public void Write();
+//    public void Write() => Console.WriteLine("1. default Write() from IWritable");
+//}
+
+//interface IFileSaver: IWritable
+//{
+//    // public void Save();
+//    public void Save() => Console.WriteLine("2. default save() from IFileSaver");
+//    public new void Write() => Console.WriteLine("3. new Write from IFileSaver");
+//}
+
+//class FileManager : IFileSaver
+//{
+//    public void Save() => Console.WriteLine("4. FileManager.Save");
+
+//    public void Write() => Console.WriteLine("5. FileManager.Write");
+
+//    void IWritable.Write() => Console.WriteLine("6. Explicit FileManager.IWritable.Write");
+//    void IFileSaver.Write() => Console.WriteLine("7. Explicit FileManager.IFileSaver.Write");
+//    void IFileSaver.Save() => Console.WriteLine("8. Explicit FileManager.IFileSaver.Save");
+//}
+
+#endregion
+
+
+#region Generic interface
+
+//Author a = new Author("101");
+
+//User<string> b = new Author("102");
+
+//IAuthenticator<string> c = new Author("103");
+
+//object d = new Author("104");
+
+//interface IAuthenticator<T>
+//{
+//    public T Id { get; }
+//}
+
+//class User<T>: IAuthenticator<T>
+//{
+//    public T Id { get; }
+//    public User(T id) => Id = id;
+//}
+
+//class Admin : IAuthenticator<string>
+//{
+//    public string Id { get; }
+//    public Admin(string id) => Id = id;
+//}
+
+//class Author : User<string>
+//{
+//    public Author(string id) 
+//        : base(id)
+//    {}
+//}
+
+#endregion
+
+
+#region IComparable / IComparable<T>
+
+//List<int> nums = new List<int>() { 4, 7, 8, 2, 4, 6, 7, 9, 0 };
+//nums.Sort();
+//foreach(int num in nums)
+//    Console.Write($"{num} ");
+//Console.WriteLine();
+
+//List<User> users = new List<User>()
+//{
+//    new User() {Id = 101, Email = "email1@mail.com", Age = 43},
+//    new User() {Id = 102, Email = "email2@mail.com", Age = 21},
+//    new User() {Id = 103, Email = "email3@mail.com", Age = 32},
+//    new User() {Id = 104, Email = "email4@mail.com", Age = 20},
+//};
+//users.Sort();
+//foreach (User u in users)
+//    Console.WriteLine($"{u} ");
+//Console.WriteLine();
+
+
+
+//class User: IComparable
+//{
+//    public int Id { get; set; }
+//    public string? Email { get; set; }
+//    public int Age { get; set; }
+
+//    public int CompareTo(object? obj)
+//    {
+//        // -1 || 0 || 1
+
+//        if (obj is null)
+//            throw new NullReferenceException();
+
+//        if (obj is User u)
+//            return u.Age - Age;
+
+//        throw new ArgumentException();
+//    }
+
+//    public override string ToString()
+//    {
+//        return $"id: {Id}, email: {Email}, age: {Age}";
+//    }
+//}
+
+
+
+//class User : IComparable<User>
+//{
+//    public int Id { get; set; }
+//    public string? Email { get; set; }
+//    public int Age { get; set; }
+
+//    public int CompareTo(User? u)
+//    {
+//        // -1 || 0 || 1
+
+//        if (u is null)
+//            throw new NullReferenceException();
+
+//        return Age - u.Age;
+//    }
+
+//    public override string ToString()
+//    {
+//        return $"id: {Id}, email: {Email}, age: {Age}";
+//    }
+//}
+
+
 
 
 
 #endregion
 
 
+#region IComparer / IComparer<T>
 
+//List<User> users = new List<User>()
+//{
+//    new User() {Id = 101, Email = "email1@mail.com", Age = 43},
+//    new User() {Id = 102, Email = "email2@mail.com", Age = 21},
+//    new User() {Id = 103, Email = "email3@mail.com", Age = 32},
+//    new User() {Id = 104, Email = "email4@mail.com", Age = 20},
+//};
+
+//users.Sort(new UserAgeComparer(Direction.Asc));
+//foreach (User u in users)
+//    Console.WriteLine($"{u} ");
+//Console.WriteLine();
+
+
+//class User
+//{
+//    public int Id { get; set; }
+//    public string? Email { get; set; }
+//    public int Age { get; set; }
+
+//    public override string ToString()
+//    {
+//        return $"id: {Id}, email: {Email}, age: {Age}";
+//    }
+//}
+
+//enum Direction
+//{
+//    Asc,
+//    Desc,
+//}
+//class UserAgeComparer : IComparer<User>
+//{
+//    private Direction direction;
+//    public UserAgeComparer(Direction direction = Direction.Asc)
+//    {
+//        this.direction = direction;
+//    }
+
+//    public int Compare(User? x, User? y)
+//    {
+//        if (x is null || y is null)
+//            throw new NullReferenceException();
+
+//        return direction == Direction.Asc ? x.Age - y.Age : y.Age - x.Age;
+//    }
+//}
+
+
+#endregion
+
+
+#region ICloneable
+
+// ICloneable
+// HW*
+
+#endregion
+
+
+#region *** invariance / covariance / contravariance
+
+// ===== invariance =====
+
+
+List<Animal> animals = new List<Animal>();
+List<Dog> dogs = new List<Dog>();
+
+// animals = dogs;          ERROR
+
+
+class Animal { }
+class Dog: Animal { }
+class Cat : Animal { }
+
+
+
+
+
+
+
+#endregion
