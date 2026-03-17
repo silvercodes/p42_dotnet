@@ -4,4 +4,5 @@
   <Project Path="03_dp_strategy/03_dp_strategy.csproj" Id="513c13bb-ebcd-47e6-accb-b27971dfac42" />
   <Project Path="04_generic/04_generic.csproj" Id="5e4770bb-fde1-4331-82ab-a7b8711ba04b" />
   <Project Path="05_interfaces/05_interfaces.csproj" Id="af4a96c7-0025-4ecc-98be-f47d7a142b79" />
+  <Project Path="06_exceptions/06_exceptions.csproj" Id="09303f23-4b5e-4f70-9ab4-2a89811c13ee" />
 </Solution>
